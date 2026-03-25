@@ -11,6 +11,11 @@ const token = process.env.TINA_TOKEN;
 const searchToken = process.env.TINA_SEARCH_TOKEN;
 
 export const config = defineConfig({
+  tinaioConfig: {
+    frontendUrlOverride: 'http://localhost:3002',
+    identityApiUrlOverride: 'https://brookj-dev-identity.tinajs.dev',
+    contentApiUrlOverride: 'https://brookj-dev-content.tinajs.dev',
+  },
   clientId: clientId,
   token: token,
   branch: branch,
