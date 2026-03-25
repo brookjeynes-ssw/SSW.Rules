@@ -40,14 +40,14 @@ export const config = defineConfig({
   schema: {
     collections: [Rule, Category, Global],
   },
-  search: {
-    tina: {
-      indexerToken: searchToken,
-      stopwordLanguages: ["eng"],
-    },
-    indexBatchSize: 100,
-    maxSearchIndexFieldLength: 100,
-  },
+  // search: {
+  //   tina: {
+  //     indexerToken: searchToken,
+  //     stopwordLanguages: ["eng"],
+  //   },
+  //   indexBatchSize: 100,
+  //   maxSearchIndexFieldLength: 100,
+  // },
   repoProvider: {
     defaultBranchName: branch,
     historyUrl: ({ relativePath, branch }) => ({
